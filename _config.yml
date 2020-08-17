@@ -1,0 +1,21 @@
+title: Foam Jekyll Template
+theme: jekyll-theme-primer
+
+baseurl: /foam-jekyll-template
+
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+readme_index:
+  enabled:          true
+
+plugins:
+- jekyll-optional-front-matter
+- jekyll-readme-index
+- jekyll-default-layout
+- jekyll-titles-from-headings
+- jekyll-relative-links
