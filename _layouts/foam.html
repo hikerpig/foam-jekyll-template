@@ -16,26 +16,24 @@ function normalizeMdLink(link) {
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
-  console.log('loaded')
   document
     .querySelectorAll(".markdown-body a[title]:not([href^=http])")
     .forEach((a) => {
-      console.log('a', a)
       // filter to only wiki-links
       var prev = a.previousSibling;
       var next = a.nextSibling;
       if (
-        prev instanceof Text && prev.textContent.endsWith('[') && 
+        prev instanceof Text && prev.textContent.endsWith('[') &&
         next instanceof Text && next.textContent.startsWith(']')
       ) {
-        
+
         // remove surrounding brackets
         prev.textContent = prev.textContent.slice(0, -1);
         next.textContent = next.textContent.slice(1);
 
         // add CSS list for styling
         a.classList.add('wikilink');
-        
+
         // replace page-link with "Page Title"...
         a.innerText = a.title;
 
