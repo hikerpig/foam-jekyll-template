@@ -50,3 +50,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 {{ content }}
+
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', function() {
+  if (typeof anchors !== 'undefined') {
+    anchors.options.visible = 'always'
+    anchors.add('a[href^=http]:not(.wikilink)')
+  }
+})
+</script>
+
