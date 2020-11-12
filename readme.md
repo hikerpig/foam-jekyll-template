@@ -1,9 +1,6 @@
 # Foam Jekyll Template
 
-Foam Jekyll Template
-===
-
-This is a Jekyll starter template for [Foam](https://foambubble.github.io/foam/), forked from the official [foam-template](https://github.com/foambubble/foam-template) which implicitly relies github pages for publish.
+This is a Jekyll starter template for [Foam](https://foambubble.github.io/foam/), forked from the official [foam-template](https://github.com/foambubble/foam-template) which implicitly relies github pages for publishing.
 
 You can find me in [foam-jekyll-template](https://github.com/hikerpig/foam-jekyll-template), or create your new project using this template.
 
@@ -33,7 +30,7 @@ Once you have github pages settings configured, it will be automatically deploye
 
 ### Build and Deploy Manually To Your own machine
 
-After build is done, you can sync `_site` directory to your VPS for deployment. 
+After build is done, you can sync `_site` directory to your VPS for deployment.
 
 ## Using Foam
 
