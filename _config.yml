@@ -13,6 +13,11 @@ kramdown:
 readme_index:
   enabled:          true
 
+repository: hikerpig/foam-jekyll-template
+
+# Generate permalinks in format specified in: https://jekyllrb.com/docs/permalinks/#built-in-formats
+permalink: pretty
+
 plugins:
 - jekyll-optional-front-matter
 - jekyll-readme-index

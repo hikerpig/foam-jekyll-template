@@ -6,7 +6,7 @@ You can find me in [foam-jekyll-template](https://github.com/hikerpig/foam-jekyl
 
 ## Getting started
 
-Replace `baseurl` in `_config.yml` file to your own namespace (if you are going to deploy it to github).
+Replace `baseurl` and `repository` in `_config.yml` file to your own namespace (if you are going to deploy it to Github or Vercel).
 
 ### Start Jekyll locally
 
@@ -24,13 +24,19 @@ jekyll build --baseurl ''
 
 ## Deploy
 
-### To Github
+### Approach 1. To Github
 
 Once you have github pages settings configured, it will be automatically deployed after you pushed.
 
-### Build and Deploy Manually To Your own machine
+### Approach 2. Build and Deploy Manually To Your own machine
 
 After build is done, you can sync `_site` directory to your VPS for deployment.
+
+### Approach 3. To Vercel
+
+Check the foam's official [Vercel recipe](https://foambubble.github.io/foam/vercel) to learn how to import project into Vercel.
+
+And don't forget to override the build command to `jekyll build --baseurl ''`.
 
 ## Using Foam
 
